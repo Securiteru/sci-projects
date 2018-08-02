@@ -1,11 +1,10 @@
 public class ArgsCheck {
 
-    public boolean Check(String x, String y, char z{
+    public void Check(String x, String y, char z){
         boolean xCorrect=false;
         boolean yCorrect=false;
         int checkX=0;
         int checkY=0;
-        double result;
 
         try{
             checkX = Integer.parseInt(x);  //taking in an integer input throws NumberFormat Exception if not an integer
@@ -31,36 +30,27 @@ public class ArgsCheck {
             System.out.println("Please enter a number on the command line");
         }
 
+        double result=0;
         if(xCorrect && yCorrect){
-            return true;
-        }else{
-            return false;
+            switch(z){
+                case '+':
+                    result=checkX+checkY;
+                    break;
+                case '-':
+                    result=checkX-checkY;
+                    break;
+                case '*':
+                    result=checkX*checkY;
+                    break;
+                case '/':
+                    result=checkX*checkY;
+                    break;
+                default:
+                    result=0;
+            }
+
+            System.out.println("The result of the arithmetic operator "+ "'"+z+"'"+" and the ints "+checkX+" and "+checkY+ " is: "+result+".");
         }
-
-
-
-//        if(xCorrect && yCorrect){
-//            switch(z){
-//                case '+':
-//                    result=checkX+checkY;
-//                    break;
-//                case '-':
-//                    result=checkX-checkY;
-//                    break;
-//                case '*':
-//                    result=checkX*checkY;
-//                    break;
-//                case '/':
-//                    result=checkX*checkY;
-//                    break;
-//                default:
-//                    printf("Invalid Operator!!!\n");
-//                    return -1;
-//            }
-//
-//            System.out.println("The result of the arithmetic operator "+ "'"+z+"'"+"and the ints "+checkX+" and "+checkY+ "is: "+result+".");
-//        }
-
 
 
     }
