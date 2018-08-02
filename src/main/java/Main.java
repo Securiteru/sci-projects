@@ -18,14 +18,14 @@ public class Main {
         System.out.println("So this particular month has: "+Monthfinder.numOfDays(2,2000)+" days.");
 
 
-        //month-finder dynamic with class variables
+        //month-finder dynamic with class variables with static or user input.
         MonthFinder monthfinder2=new MonthFinder(2, 2000);
         monthfinder2.numOfDaysOop();
 
         //calc dynamic with full expression: arg1 is the first number,
         // arg2 is the second and the 3rd arg is the arithmetical operator
-        System.out.println("Input first argument- the first number:");
         Scanner scanny=new Scanner(System.in);
+        System.out.println("Input first argument- the first number:");
         String Input1=scanny.nextLine();
         System.out.println("Input second argument- the second number:");
         String Input2=scanny.nextLine();
