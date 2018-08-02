@@ -1,12 +1,10 @@
-import Calculator.Calculator;
+import Calculator.*;
 import MonthPicker.MonthFinder;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World ");
+        System.out.println("Hello World and Alex ");
 
         //static calc requires to call the specific function with 2 variables
         Calculator calculator = new Calculator();
@@ -34,7 +32,7 @@ public class Main {
         System.out.println("Input third argument- a mathematical operator (+/-/*/'/':");
         char chary=scanny.nextLine().charAt(0);
 
-        ArgsCheck argy=new ArgsCheck();
+        CalcWithArgsCheck argy=new CalcWithArgsCheck();
 
         argy.Check(Input1,Input2,chary);
 

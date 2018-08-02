@@ -1,4 +1,6 @@
-public class ArgsCheck {
+package Calculator;
+
+public class CalcWithArgsCheck {
 
     public void Check(String x, String y, char z){
         boolean xCorrect=false;
