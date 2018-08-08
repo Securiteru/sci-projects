@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.Random;
 
 public class Main {
@@ -22,10 +20,6 @@ public class Main {
             System.out.println(unsorted[i].getLastName());
         }
 
-
-
-
-
         System.out.println(Arrays.toString(pArray));
 
         PersonSorter ps = new PersonSorter(pArray);
@@ -33,25 +27,29 @@ public class Main {
 
         Person[] sorted = ps.sortPeopleByAge(unsorted);
 
-        System.out.println(Arrays.toString(pArray));
+        System.out.println(Arrays.toString(sorted));
+
+        for (Person Persony: sorted) {
+            System.out.println(Persony.getAge());
+
+        }
 
 
 
 
 
 
-        this.pArray=a;
-        this.arrayLength=pArray.length;
-        int temp;
-        for(int i=0;i<arrayLength; i++)
-            for(int j=0;j<arrayLength-1; j++) {
-                if (pArray[j] > pArray[j + 1]) {
-                    temp = pArray[j];
-                    pArray[j] = pArray[j + 1];
-                    pArray[j + 1] = temp;
-                }
-            }
+//        this.pArray=a;
+//        this.arrayLength=pArray.length;
+//        int temp;
+//        for(int i=0;i<arrayLength; i++)
+//            for(int j=0;j<arrayLength-1; j++) {
+//                if (pArray[j] > pArray[j + 1]) {
+//                    temp = pArray[j];
+//                    pArray[j] = pArray[j + 1];
+//                    pArray[j + 1] = temp;
+//                }
+//            }
     }
 
-    }
 }
