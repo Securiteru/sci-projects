@@ -30,18 +30,16 @@ public class PersonSorter {
   public Person[] sortPeopleByAge(Person[] a) {
     this.pArray = a;
     this.arrayLength = pArray.length;
+    boolean swapped =false ;
     Person temp;
-    int j = 0;
-    boolean swapped = true;
-    while (swapped) {
-      swapped = false;
-      j++;
-      for (int i = 0; i < arrayLength - j; i++) {
+    while (swapped == false) {
+      swapped = true;
+      for (int i = 0; i < arrayLength - 1; i++) {
         if (((a[i].getAge()) > ((pArray[i + 1].getAge())))) {
           temp = pArray[i];
           pArray[i] = pArray[i + 1];
           pArray[i + 1] = temp;
-          swapped = true;
+          swapped = false;
         }
       }
     }
