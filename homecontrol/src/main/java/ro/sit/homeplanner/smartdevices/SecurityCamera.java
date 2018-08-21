@@ -36,6 +36,16 @@ public class SecurityCamera extends SmartObjects {
     this.filmingStatus = false;
   }
 
+  @Override
+  public String toString() {
+    return "SecurityCamera{" +
+            "status=" + status +
+            ", filmingStatus=" + filmingStatus +
+            ", CONSUMPTION=" + CONSUMPTION +
+            ", FILM_CONSUMPTION=" + FILM_CONSUMPTION +
+            '}';
+  }
+
   public float getConsumption() {
     return (status && filmingStatus) ? this.CONSUMPTION + this.FILM_CONSUMPTION : status ? this.CONSUMPTION : 0;
   }

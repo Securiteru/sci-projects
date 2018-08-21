@@ -42,6 +42,15 @@ public class Thermostat extends SmartObjects {
 
   }
 
+  @Override
+  public String toString() {
+    return "Thermostat{" +
+            "status=" + status +
+            ", temperature=" + temperature +
+            ", CONSUMPTION=" + CONSUMPTION +
+            '}';
+  }
+
   public float getConsumption() {
     return status ? this.CONSUMPTION : 0;
   }

@@ -50,6 +50,16 @@ public class Lamp extends SmartObjects {
     this.color = color;
   }
 
+  @Override
+  public String toString() {
+    return "Lamp{" +
+            "status=" + status +
+            ", brightness=" + brightness +
+            ", color='" + color + '\'' +
+            ", CONSUMPTION=" + CONSUMPTION +
+            '}';
+  }
+
   public float getConsumption() {
     return status ? this.CONSUMPTION : 0;
   }

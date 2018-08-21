@@ -66,6 +66,7 @@ public class HostDeviceController {
     for (SmartObjects s : Smarties) {
       if (s != null) {
         s.getStatus();
+        s.toString();
       }
     }
 
