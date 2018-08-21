@@ -1,4 +1,8 @@
-package smartdevices;
+package ro.sit.homeplanner.smartdevices;
+
+/*
+ * This class represents the functionality of a security camera and contains the general and specific behaviour of one.
+ */
 
 public class SecurityCamera extends SmartObjects {
 

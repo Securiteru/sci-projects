@@ -1,4 +1,16 @@
-import smartdevices.*;
+import ro.sit.homeplanner.smartdevices.Lamp;
+import ro.sit.homeplanner.smartdevices.SecurityCamera;
+import ro.sit.homeplanner.smartdevices.SmartObjects;
+import ro.sit.homeplanner.smartdevices.Thermostat;
+
+/**
+ * @author securiter
+ * A class that controlls all smart objects at the same time.
+ * There is an array of smart objects initiated with various devices that perform base
+ * functionality but they also have proprietary functions to their class and that happens
+ * when they are cast to that particular class.
+ */
+
 
 public class HostDeviceController {
 
@@ -104,6 +116,10 @@ public class HostDeviceController {
         System.out.println(thermy.getTemperature());
       }
     }
+  }
+
+  public SmartObjects[] getDevices(){
+    return Smarties;
   }
 
 

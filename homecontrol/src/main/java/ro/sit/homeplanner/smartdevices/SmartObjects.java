@@ -1,4 +1,9 @@
-package smartdevices;
+package ro.sit.homeplanner.smartdevices;
+
+/**
+ * @author securiter
+ * An abstract class that performs all the base Smart Objects' functionality, including the Consumer interface.
+ */
 
 public abstract class SmartObjects implements Consumer {
   private boolean status;

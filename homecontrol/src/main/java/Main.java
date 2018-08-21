@@ -1,4 +1,7 @@
-import smartdevices.*;
+/**
+ * @author securiter
+ * Main method for accessing the HostDeviceController and the individual functions of all classes.
+ */
 
 public class Main {
   public static void main(String[] args) {
@@ -16,6 +19,7 @@ public class Main {
       System.out.println(result[i] + " ");
     }
 
+    hosty.getDevices();
     hosty.turnOnFilmingAll();
     hosty.turnOffFilmingAll();
     hosty.setBrightnessAndSetColor(50, "RED");
