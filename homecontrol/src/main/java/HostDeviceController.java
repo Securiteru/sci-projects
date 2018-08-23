@@ -14,6 +14,12 @@ import ro.sit.homeplanner.smartdevices.Thermostat;
 
 public class HostDeviceController {
 
+
+  /**
+   * Represents the class variable Smarties that holds
+   * the array of SmartObjects.
+   */
+
   private SmartObjects[] Smarties = new SmartObjects[10];
 
   public HostDeviceController() {
@@ -28,6 +34,8 @@ public class HostDeviceController {
     Smarties[8] = new SecurityCamera();
     Smarties[9] = new SecurityCamera();
   }
+
+
 
   public void turnAllOn() {
 
