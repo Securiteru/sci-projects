@@ -1,0 +1,16 @@
+Best Selling Products:
+0. Apple iPhone X - 5
+1. Samsung Galaxy 9 - 4
+2. Xiaomi Mi Mix 6 - 3
+
+Top Customers
+0. John Stuart - 4
+1. Alex Jones - 3
+2. Miranda Walker - 3
+3. Josh Bernard - 2
+
+Top Returning Customers:
+0. John Stuart - 3065
+1. Miranda Walker - 1770
+2. Josh Bernard - 1365
+3. Alex Jones - 1128
